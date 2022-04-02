@@ -6,7 +6,7 @@ from discord.ext import commands
 
 from discord_slash import SlashCommand, SlashContext
 from discord_slash.utils.manage_commands import create_choice, create_option
-
+"""Here need enter python file names to connect cogs"""
 cogs = [
     "other",
     "inf",
@@ -16,7 +16,7 @@ bot = commands.Bot(command_prefix="!", help_command=None, intents=discord.Intent
 sl = SlashCommand(bot, sync_commands=True)
 
 
-"""-_-_-_-_-_-_-_-_-_-"""
+"""Commands"""
 
 @bot.event
 async def on_ready():
@@ -36,7 +36,7 @@ async def _help(ctx:SlashCommand):
   embed.set_footer(text="ТыГыДыК | by DuyFI")
   await ctx.send(embed=embed)
 
-"""-_-_-_-_-_-_-_-_-_-"""
+"""Cog loader"""
 
 if __name__ == "__main__":
     for extensoin in cogs:
@@ -47,4 +47,4 @@ if __name__ == "__main__":
             print(err)
 
 keep_alive()
-bot.run("OTU3NTc4MDYzNTQ0MjAxMjE2.YkA0EQ.mvmD0u9nFwwCiZrAMxoZl3d7t1M")
+bot.run("ENTER TOKEN HERE!") #Pleace do not publish bot token!
