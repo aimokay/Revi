@@ -1,0 +1,19 @@
+Example:
+
+import discord
+from discord.ext import commands
+
+from discord_slash import cog_ext
+from discord_slash import SlashCommand, SlashContext
+from discord_slash.utils.manage_commands import create_choice, create_option
+
+
+class Example(commands.Cog): Change the class name to your own
+    def __init__(self, bot):
+        self.bot = bot
+
+    #enter your command/events here!
+
+
+def setup(bot):
+    bot.add_cog(Example(bot)) #Also here, too, put the name of the class that you entered above!
